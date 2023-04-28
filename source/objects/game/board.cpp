@@ -18,7 +18,8 @@ namespace BoardConfig{
 	const int PAZZLE_HEIGHT = 5;
 
 	//アニメーション画像の最大数
-	const int ANIM_GRAPH_MAX = 104;
+	const int ANIM_GRAPH_MAX = 4;
+	//const int ANIM_GRAPH_MAX = 104;
 
 	static float animationSpeed = 0.1;//増減
 
@@ -29,7 +30,7 @@ namespace BoardConfig{
 namespace {
 	using namespace BoardConfig;
 	std::string pass = "data/texture/pieceImages/snow_img_byNvidiaCanvas.png";
-	std::string passAnimation = "data/texture/pieceImages/gif/";
+	std::string passAnimation = "data/texture/pieceImages/__gif/";
 	std::string maskPass = "data/texture/masks/puzzle/";
 
 //マスク画像の枚数
@@ -156,7 +157,7 @@ void Board::Init(){
 	hImagesAnimation.resize(ANIM_GRAPH_MAX,-1);//アニメーション画像
 	char buf_animation[255];
 	for (int i = 0; i < hImagesAnimation.size(); i++) {
-		sprintf_s<255>(buf_animation, (passAnimation + "%d" + ".png").c_str(), i );
+		sprintf_s<255>(buf_animation, (passAnimation + "%d" + ".png").c_str(), i +1 );
 		int hImg = LoadGraph(buf_animation);
 		assert(hImg > 0);
 		hImagesAnimation.at(i) = hImg;
