@@ -1,0 +1,12 @@
+画像ごとの利用サイトのURL達です。
+
+（例）
+・gazo-
+https://hogehoge.co.hoge
+
+名前
+URL
+
+・snow_img_byNvidiaCanvas.png
+NVIDIA Canvasで作成
+
