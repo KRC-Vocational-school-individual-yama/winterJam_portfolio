@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\libs\keyBoard.cpp" />
+    <ClCompile Include="source\libs\keyManager.cpp" />
+    <ClCompile Include="source\libs\oneCharacterSpacing.cpp" />
+    <ClCompile Include="source\libs\save.cpp" />
+    <ClCompile Include="source\libs\scene.cpp" />
+    <ClCompile Include="source\libs\scenechanger.cpp" />
+    <ClCompile Include="source\libs\scenemanager.cpp" />
+    <ClCompile Include="source\libs\bootTestObject.cpp" />
+    <ClCompile Include="source\libs\bootScene.cpp" />
+    <ClCompile Include="source\main\app.cpp" />
+    <ClCompile Include="source\main\winmain.cpp" />
+    <ClCompile Include="source\objects\common\pauseWindow.cpp" />
+    <ClCompile Include="source\objects\common\sound.cpp" />
+    <ClCompile Include="source\objects\difficulty\difficultySelectionSceneChanger.cpp" />
+    <ClCompile Include="source\objects\explanation\explanationSceneChanger.cpp" />
+    <ClCompile Include="source\objects\game\board.cpp" />
+    <ClCompile Include="source\objects\game\ClearJudgment.cpp" />
+    <ClCompile Include="source\objects\game\gameTime.cpp" />
+    <ClCompile Include="source\objects\menu\menuSceneChanger.cpp" />
+    <ClCompile Include="source\objects\title\titleobject.cpp" />
+    <ClCompile Include="source\scenes\difficultySelectionScene.cpp" />
+    <ClCompile Include="source\scenes\explanationScene.cpp" />
+    <ClCompile Include="source\scenes\gameScene.cpp" />
+    <ClCompile Include="source\scenes\menuScene.cpp" />
+    <ClCompile Include="source\scenes\titleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\libs\object.h" />
+    <ClInclude Include="source\libs\oneCharacterSpacing.h" />
+    <ClInclude Include="source\libs\save.h" />
+    <ClInclude Include="source\libs\scene.h" />
+    <ClInclude Include="source\libs\scenechanger.h" />
+    <ClInclude Include="source\libs\scenemanager.h" />
+    <ClInclude Include="source\libs\bootTestObject.h" />
+    <ClInclude Include="source\libs\bootScene.h" />
+    <ClInclude Include="source\libs\myDxLib.h" />
+    <ClInclude Include="source\libs\keyBoard.h" />
+    <ClInclude Include="source\libs\keyManager.h" />
+    <ClInclude Include="source\main\app.h" />
+    <ClInclude Include="source\main\config.h" />
+    <ClInclude Include="source\objects\common\pauseWindow.h" />
+    <ClInclude Include="source\objects\common\difficultToGameSend.h" />
+    <ClInclude Include="source\objects\common\sound.h" />
+    <ClInclude Include="source\objects\difficulty\difficultySelectionSceneChanger.h" />
+    <ClInclude Include="source\objects\explanation\explanationSceneChanger.h" />
+    <ClInclude Include="source\objects\game\board.h" />
+    <ClInclude Include="source\objects\game\ClearJudgment.h" />
+    <ClInclude Include="source\objects\game\gameTime.h" />
+    <ClInclude Include="source\objects\menu\menuSceneChanger.h" />
+    <ClInclude Include="source\objects\title\titleobject.h" />
+    <ClInclude Include="source\objects\button.h" />
+    <ClInclude Include="source\resource\resource.h" />
+    <ClInclude Include="source\scenes\gameScene.h" />
+    <ClInclude Include="source\scenes\titleScene.h" />
+    <ClInclude Include="source\scenes\menuScene.h" />
+    <ClInclude Include="source\scenes\difficultySelectionScene.h" />
+    <ClInclude Include="source\scenes\explanationScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\resource\DxlibSmple.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="source\resource\DxlibSmple.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{71365B7B-12B3-4558-AA62-93B1629A3CD8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DxLibPazzleProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>うご☆パズ</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Library\DxLib</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Library\DxLib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>Library\DxLib</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>Library\DxLib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
